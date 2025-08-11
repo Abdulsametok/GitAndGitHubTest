@@ -1,0 +1,17 @@
+C:\Users\mrasa\source\repos\createhack\createhack\bin\Debug\net8.0-windows\createhack.exe
+C:\Users\mrasa\source\repos\createhack\createhack\bin\Debug\net8.0-windows\createhack.deps.json
+C:\Users\mrasa\source\repos\createhack\createhack\bin\Debug\net8.0-windows\createhack.runtimeconfig.json
+C:\Users\mrasa\source\repos\createhack\createhack\bin\Debug\net8.0-windows\createhack.dll
+C:\Users\mrasa\source\repos\createhack\createhack\bin\Debug\net8.0-windows\createhack.pdb
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.Form1.resources
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.Form2.resources
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.csproj.GenerateResource.cache
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.AssemblyInfoInputs.cache
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.AssemblyInfo.cs
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.csproj.CoreCompileInputs.cache
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.dll
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\refint\createhack.dll
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.pdb
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\createhack.genruntimeconfig.cache
+C:\Users\mrasa\source\repos\createhack\createhack\obj\Debug\net8.0-windows\ref\createhack.dll
