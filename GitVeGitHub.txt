@@ -1,0 +1,131 @@
+Git ve Github
+Git: Çalışma alanı- Geçici alan - Depo olmak üzere 3 alanda çalışır.
+
+
+cd : bu kod ile geçişleri yapıyoruz. ör- cd /c/desktop/documents
+
+
+pwd: bilgisayar üzerinde bulunduğunuz konumu gösterir.
+
+
+git init: bulunduğunuz konumda bir .git klasörü oluşturur. Bu klasör git'in tüm geçmiş ve yapılandırma bilgilerini saklar.
+
+
+git status: Bulunduğunuz konumda hangi dosyaların takip edildiğini gösterir.
+
+
+git add: takip edilmesini istediğimiz dosyayı takip edilenler listesine ekler. ör git add CreateHack
+
+
+git config: yapılandırma ayarlarını yapar. 3 başlıkta yapılandırma yapılabilir. local,global ve system. ör git config --global user.email "your_email@example.com"
+bazı config kodları
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+
+git commit: eklenmiş dosyayı kaydet tuşu gibi düşünülebilir. Bundan sonra -m ile "" içerisinde bir mesaj bırakılarak kayıt sağlanabilir.
+ör
+git commit -m "CreateHack Dosyasını Ekledim Ve kaydediyorum."
+her commitin benzersiz bir kimliği(id) si vardır. buda kaydedilmiş dosyalar arasında gezinmemizi sağlıyor. Yani kaydedilmiş bir dosyayı eski haline rahatlıkla çevirebiliyoruz.
+
+
+git log: bu komut commitin benzersiz kimliğini mesajını ve kaydetme tarihini gösterir.
+
+yazdığımız mesajı değiştirmek istiyoruz. O zaman 
+git commit --ammend  açılan ekranda mesajı düzenleyip wq yapıp çıkış yapabilirsin.
+
+git diff: çalışma alanındaki kaydedilmiş dosylar üzerinde herhangi bir değişiklik yapıldıysa gösterir.
+tek bir dosya üzerinde ne değişiklik yapıldığını öğrenmek için git diff $DosyaAdi
+git diff Gitdenemeleri1.txt 
+git diff --staged : geçiçi alandaki değişiklikleri gösterir.
+
+git restore $DosyaAdi : geçici bellekteki dosyayı çalışma alanındakiyle değiştirir. bu komut çalışma alanında yapılan değişiklikleri geri almamızı sağlar.
+
+
+
+git reset $DosyaAdi : Bu komut belirli dosyayı geçici alandan çıkarır.
+----------------------------------------------------------------------------------------------------------
+
+
+Github a dosyaları kaydetme 
+
+git push $GitRepoLinkiniz
+bunu sürekli bu şekilde yapmak yerine bu linki bir değişkene tanımlayabilirsiniz
+git remote add $TakmaAd $GitRepoLinkiniz
+git remote add origin $GitRepoLinkiniz
+
+git push $GitRepoLinkiniz(-u) $TakmaAd $BulunduğunuzBranch
+git push -u origin master 
+
+
+
+GitHub a ekip arkadaşı dahil etme. 
+
+Github'ta Repoya gir ardından settings e gir solda Collaborators kısmına git şifreni gir Açılan sekmede add people de ve kişileri ekle. 
+eklenen kişiye istek gider. 
+
+
+Şimdi Repo paylaşıldı ve Karşı taraftan dosya alacağız yapmamız gerekenler. 
+
+1- Bir klasöre gidelim. 
+2- git bash here da şu komutu yazalım. 
+3- git clone $ProjeLinki
+
+projede değişiklik yapıp commit ettikten sonra pushla 
+ana bilgisayara değişiklikleri almak için 
+git fetch 
+fetch githubtan yerel depoya alır 
+
+git merge 
+merge yerel depodan çalışma alanına alır. 
+
+git pull 
+githubtan direkt olarak çalışma alanına alır. pull=merge+fetch denebilir.
+
+---------------------------------------------------------------------------------------------------------
+Git Branchları 
+Branchların bizlere yararı main dosyasına dokunmadan değişiklik yapabilmek bu sebeple main dosyasında herhangi bir hasara sebep olmamaktır. Örneğin uygulamamızın
+master branch'ı olsun. uygulamanın güvenlik kısmını bu branch'tan yapmak yerine secure diye bir branch açıp oradan güvenliği sağlayıp. Daha sonra master branch ile birleştirebilir.
+Bu durumda master branch üzerinde bir işlem yapıp ana branch'a zarar verme ihtimalini en aza indirgeriz.
+
+komutlar
+
+git branch hangi branchta olduğumuzu gösterir.
+
+git switch $BranchAdi : branchlar arası geçişi sağlar. 
+git switch -c $YeniBranchAdi : yeni bir branch oluşturur. 
+git push -u origin(veya repo linki) $BranchAdi : yeni branşa verileri gönderir.
+git pull origin master ile kodun güncelliğini kontrol edebiliriz.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
